@@ -29,7 +29,7 @@ class App extends Component {
                 <a className="nav-link light-a" href="https://github.com/jdoiron94" target="_blank" rel="noopener noreferrer">04. Projects</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link light-a" href="static/Jacob Doiron Resume.pdf" target="_blank" rel="noopener noreferrer">05. Resume</a>
+                <a className="nav-link light-a" href="Jacob Doiron Resume.pdf" target="_blank" rel="noopener noreferrer">05. Resume</a>
               </li>
             </ul>
           </div>
