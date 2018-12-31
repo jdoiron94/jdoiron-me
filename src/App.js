@@ -17,13 +17,13 @@ class App extends Component {
           <div id="navCollapse" className="collapse navbar-collapse">
             <ul className="nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link active light-a" href="#about">01. About</a>
+                <a className="nav-link active light-a scrollable" href="#about">01. About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link light-a" href="#work">02. Work</a>
+                <a className="nav-link light-a scrollable" href="#work">02. Work</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link light-a" href="#contact">03. Contact</a>
+                <a className="nav-link light-a scrollable" href="#contact">03. Contact</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link light-a" href="https://github.com/jdoiron94" target="_blank" rel="noopener noreferrer">04. Projects</a>
