@@ -15,20 +15,20 @@ class App extends Component {
             <FontAwesomeIcon icon={faBars} size="sm"/>
           </button>
           <div id="navCollapse" className="collapse navbar-collapse">
-            <ul className="nav ml-auto">
-              <li className="nav-item">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item px-2 ml-auto">
                 <a className="nav-link active light-a scrollable" href="#about">01. About</a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item px-2 ml-auto">
                 <a className="nav-link light-a scrollable" href="#work">02. Work</a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item px-2 ml-auto">
                 <a className="nav-link light-a scrollable" href="#contact">03. Contact</a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item px-2 ml-auto">
                 <a className="nav-link light-a" href="https://github.com/jdoiron94" target="_blank" rel="noopener noreferrer">04. Projects</a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item px-2 ml-auto">
                 <a className="nav-link light-a" href="Jacob Doiron Resume.pdf" target="_blank" rel="noopener noreferrer">05. Resume</a>
               </li>
             </ul>
