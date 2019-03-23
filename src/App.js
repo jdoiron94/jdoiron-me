@@ -79,7 +79,7 @@ class App extends Component {
                   <div className="tab-content">
                     <div id="hurricanes" className="tab-pane fade show active" role="tabpanel">
                       <p>Lead Full Stack Developer <span>@ <a className="light-a" href="https://www.nhl.com/hurricanes" target="_blank" rel="noopener noreferrer">Carolina Hurricanes</a></span></p>
-                      <p>January 2017 - Present</p>
+                      <p>January 2017 - March 2019</p>
                       <div>
                         <ul>
                           <li>Created an online role-based platform for the Carolina Hurricanes Foundation which was previously bid accessible only in-person or over the phone.</li>
