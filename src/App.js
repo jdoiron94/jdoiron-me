@@ -39,15 +39,15 @@ class App extends Component {
             <div>Hi, my name is</div>
             <h1>Jacob Doiron.</h1>
             <p className="mt-4">I like to build systems.</p>
-            <p className="mt-4">I am currently employed by the <a className="light-a" href="https://www.nhl.com/hurricanes" target="_blank" rel="noopener noreferrer">Carolina Hurricanes</a> as the <span>Lead Full Stack Developer</span>, developing and maintaining websites used for taking payment in various forms.</p>
+            <p className="mt-4">I am currently employed by <a className="light-a" href="https://devada.com" target="_blank" rel="noopener noreferrer">Devada</a> as a <span>Software Engineer</span>, working on <a className="light-a" href="https://dzone.com" target="_blank" rel="noopener noreferrer">DZone</a> and DWIGHT.</p>
           </div>
         </div>
         <div id="about" className="dark-bg pt-sm pb-lg">
           <div className="container">
             <div className="offset-lg-1 col-lg-9">
               <h1 className="light-text mb-sm">01. About me</h1>
-              <p>I'm a Full Stack Developer who enjoys watching projects go from ideas and inception to architecting and the journey along the way to the end of the final product.</p>
-              <p>I graduated from St. Mary's College of Maryland in the spring of 2016 and have been developing professionally since. My favorite part in the SDLC is the act of breaking down a project into consumable components. Some topics I find interesting in the field are <a className="dark-a" href="https://skymind.ai/wiki/neural-network" target="_blank" rel="noopener noreferrer">Neural Networks</a>, <a className="dark-a" href="https://www.thinkful.com/blog/what-is-data-science/" target="_blank" rel="noopener noreferrer">Data Science</a>, and <a className="dark-a" href="https://www.sas.com/en_us/insights/analytics/computer-vision.html" target="_blank" rel="noopener noreferrer">Computer Vision</a>.</p>
+              <p>I'm a Software Engineer who enjoys watching projects go from ideas and inception to architecting and the journey along the way to the end of the final product.</p>
+              <p>I graduated from St. Mary's College of Maryland in the spring of 2016 and have been developing professionally since. My favorite part in the SDLC is breaking down a project into consumable components. Some topics I find interesting in the field are <a className="dark-a" href="https://skymind.ai/wiki/neural-network" target="_blank" rel="noopener noreferrer">Neural Networks</a>, <a className="dark-a" href="https://www.thinkful.com/blog/what-is-data-science/" target="_blank" rel="noopener noreferrer">Data Science</a>, and <a className="dark-a" href="https://www.sas.com/en_us/insights/analytics/computer-vision.html" target="_blank" rel="noopener noreferrer">Computer Vision</a>.</p>
               <p>Here are some technologies I'm familiar with:</p>
               <div>
                 <ul className="split-ul">
