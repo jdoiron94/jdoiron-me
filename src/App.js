@@ -108,7 +108,7 @@ class App extends Component {
           <div className="container">
             <div className="offset-lg-1 col-lg-9">
               <h1 className="light-text text-center mb-sm">03. Contact me</h1>
-              <p className="text-center">Think I could be a potential fit for your company? Contact me via <a className="dark-a" href="https://www.linkedin.com/in/jdoiron94/" target="_blank" rel="noopener noreferrer">LinkedIn</a> or send me an <a className="dark-a" href="mailto:jdoiron@smcm.edu" rel="noopener noreferrer">email</a>.</p>
+              <p className="text-center">Think I could be a potential fit for your company? Contact me via <a className="dark-a" href="https://www.linkedin.com/in/jdoiron94/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
             </div>
           </div>
         </div>
