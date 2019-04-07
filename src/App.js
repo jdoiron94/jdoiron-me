@@ -39,7 +39,7 @@ class App extends Component {
             <div>Hi, my name is</div>
             <h1>Jacob Doiron.</h1>
             <p className="mt-4">I like to build systems.</p>
-            <p className="mt-4">I am currently employed by <a className="light-a" href="https://devada.com" target="_blank" rel="noopener noreferrer">Devada</a> as a <span>Software Engineer</span>, working on <a className="light-a" href="https://dzone.com" target="_blank" rel="noopener noreferrer">DZone</a> and DWIGHT.</p>
+            <p className="mt-4">I am currently employed by <a className="light-a" href="https://devada.com" target="_blank" rel="noopener noreferrer">Devada</a> as a <span>Software Engineer</span>, working on <a className="light-a" href="https://dzone.com" target="_blank" rel="noopener noreferrer">DZone</a> and <span>DWIGHT</span>.</p>
           </div>
         </div>
         <div id="about" className="dark-bg pt-sm pb-lg">
