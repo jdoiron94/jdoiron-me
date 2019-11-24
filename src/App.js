@@ -71,13 +71,24 @@ class App extends Component {
               <div className="row">
                 <div className="col-md-4 col-lg-3">
                   <div id="listTab" className="list-group" role="tablist">
-                    <a className="list-group-item list-group-item-action active" data-toggle="list" href="#hurricanes" role="tab">Carolina Hurricanes</a>
+                    <a className="list-group-item list-group-item-action active" data-toggle="list" href="#devada" role="tab">Devada</a>
+                    <a className="list-group-item list-group-item-action" data-toggle="list" href="#hurricanes" role="tab">Carolina Hurricanes</a>
                     <a className="list-group-item list-group-item-action" data-toggle="list" href="#syngenta" role="tab">Syngenta</a>
                   </div>
                 </div>
                 <div className="col-md-8 col-lg-9 sm-mt-sm">
                   <div className="tab-content">
-                    <div id="hurricanes" className="tab-pane fade show active" role="tabpanel">
+                  <div id="devada" className="tab-pane fade show active" role="tabpanel">
+                      <p>Software Engineer <span>@ <a className="light-a" href="https://devada.com/" target="_blank" rel="noopener noreferrer">Devada</a></span></p>
+                      <p>March 2019 - Present</p>
+                      <div>
+                        <ul>
+                          <li>Integrated email notifications through GetResponse to handle dispatching emails for campaigns and daily/weekly newsletters.</li>
+                          <li>Implemented a new user registration and login system which allows users to download gated content through answering progressive profile questions.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="hurricanes" className="tab-pane fade" role="tabpanel">
                       <p>Lead Full Stack Developer <span>@ <a className="light-a" href="https://www.nhl.com/hurricanes" target="_blank" rel="noopener noreferrer">Carolina Hurricanes</a></span></p>
                       <p>January 2017 - March 2019</p>
                       <div>
