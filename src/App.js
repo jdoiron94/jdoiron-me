@@ -34,7 +34,7 @@ class App extends Component {
             </ul>
           </div>
         </nav>
-        <div className="container">
+        <div className="container light-bg">
           <div className="offset-lg-1 col-lg-9 mt-lg mb-lg">
             <div>Hi, my name is</div>
             <h1>Jacob Doiron.</h1>

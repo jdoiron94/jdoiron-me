@@ -1,9 +1,14 @@
-body {
+body, .light-bg {
   background-color: #F4F6F6;
 }
 
-h1 {
+h1, .light-a:hover, .light-a:focus {
   color: #1C2F4E;
+}
+
+.light-bg p,
+.light-bg li {
+  color: #647182;
 }
 
 p, li, .blue-text {
@@ -20,10 +25,6 @@ a, span {
 
 .dark-bg {
   background-color: #1C2F4E;
-}
-
-.light-bg {
-  background-color: #F4F6F6;
 }
 
 .footer {
@@ -70,10 +71,6 @@ a, span {
 
 /* Laptop/desktop classes */
 @media screen and (min-width: 992px) {
-  .light-a:hover, .light-a:focus {
-    color: #1C2F4E;
-  }
-
   .mt-lg {
     margin-top: 15rem;
   }
@@ -89,10 +86,6 @@ a, span {
 
 /* Tablet/laptop classes */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .light-a:hover, .light-a:focus {
-    color: #1C2F4E;
-  }
-
   .mt-lg {
     margin-top: 7.5rem;
   }
@@ -108,11 +101,6 @@ a, span {
 
 /* Mobile classes */
 @media screen and (max-width: 767px) {
-
-  .light-a:hover, .light-a:focus {
-    color: #F4F6F6;
-  }
-
   .sm-mt-sm {
     margin-top: 1.5rem;
   }
