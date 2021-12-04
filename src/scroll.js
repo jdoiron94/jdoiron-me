@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
-$(document).ready(function() {
-  $('.scrollable').click(function(event) {
+$(function() {
+  $('.scrollable').on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
       const hash = this.hash;
