@@ -38,7 +38,7 @@ class App extends Component {
           <div className="offset-lg-1 col-lg-9 mt-lg mb-lg">
             <div>Hi, my name is</div>
             <h1>Jacob Doiron.</h1>
-            <p className="mt-4">I am currently employed by <a className="light-a" href="https://devada.com" target="_blank" rel="noopener noreferrer">Devada</a> as a <span>Software Engineer</span>, working on <a className="light-a" href="https://dzone.com" target="_blank" rel="noopener noreferrer">DZone</a>, and I enjoy building systems.</p>
+            <p className="mt-4">I am currently employed by <a className="light-a" href="https://dzone.com" target="_blank" rel="noopener noreferrer">DZone</a> as a <span>Senior Software Engineer</span> and I enjoy building systems.</p>
           </div>
         </div>
         <div id="about" className="dark-bg pt-sm pb-lg">
@@ -70,15 +70,15 @@ class App extends Component {
               <div className="row">
                 <div className="col-md-4 col-lg-3">
                   <div id="listTab" className="list-group" role="tablist">
-                    <a className="list-group-item list-group-item-action active" data-toggle="list" href="#devada" role="tab">Devada</a>
+                    <a className="list-group-item list-group-item-action active" data-toggle="list" href="#dzone" role="tab">DZone</a>
                     <a className="list-group-item list-group-item-action" data-toggle="list" href="#hurricanes" role="tab">Carolina Hurricanes</a>
                     <a className="list-group-item list-group-item-action" data-toggle="list" href="#syngenta" role="tab">Syngenta</a>
                   </div>
                 </div>
                 <div className="col-md-8 col-lg-9 sm-mt-sm">
                   <div className="tab-content">
-                  <div id="devada" className="tab-pane fade show active" role="tabpanel">
-                      <p>Software Engineer <span>@ <a className="light-a" href="https://devada.com/" target="_blank" rel="noopener noreferrer">Devada</a></span></p>
+                  <div id="dzone" className="tab-pane fade show active" role="tabpanel">
+                      <p>Senior Software Engineer <span>@ <a className="light-a" href="https://dzone.com" target="_blank" rel="noopener noreferrer">DZone</a></span></p>
                       <p>March 2019 - Present</p>
                       <div>
                         <ul>
