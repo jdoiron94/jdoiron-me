@@ -44,19 +44,31 @@ class App extends Component {
           <div className="container">
             <div className="offset-lg-1 col-lg-9">
               <h1 className="light-text mb-sm">01. About me</h1>
-              <p>I'm a Software Engineer who enjoys working on project architecture and implementation, and I believe the most important parts in the SDLC are requirements analysis and the planning phase.</p>
-              <p>I graduated from St. Mary's College of Maryland in the spring of 2016 and have been developing professionally since. Some topics I find interesting in the field are <a className="dark-a" href="https://skymind.ai/wiki/neural-network" target="_blank" rel="noopener noreferrer">Neural Networks</a> and <a className="dark-a" href="https://www.sas.com/en_us/insights/analytics/computer-vision.html" target="_blank" rel="noopener noreferrer">Computer Vision</a>.</p>
-              <p>Here are some technologies I'm familiar with:</p>
+              <p>I'm a Software Engineer who enjoys working on project architecture and implementation, with an emphasis on scoping and timely delivery. I graduated from St. Mary's College of Maryland in the spring of 2016 and have been developing professionally since.</p>
+              <p>Here are some languages and frameworks I'm familiar with:</p>
               <div>
                 <ul className="split-ul">
                   <li className="split-li">Java</li>
+                  <li className="split-li">Node.js</li>
+                  <li className="split-li">Python</li>
+                  <li className="split-li">HTML</li>
+                  <li className="split-li">JavaScript</li>
+                  <li className="split-li">CSS</li>
+                </ul>
+              </div>
+              <p>Here are some additional supporting technologies I've used:</p>
+              <div>
+                <ul className="split-ul">
                   <li className="split-li">Spring</li>
                   <li className="split-li">Hibernate</li>
+                  <li className="split-li">Freemarker</li>
+                  <li className="split-li">Thymeleaf</li>
+                  <li className="split-li">Gradle</li>
                   <li className="split-li">REST</li>
-                  <li className="split-li">Python</li>
-                  <li className="split-li">JavaScript</li>
-                  <li className="split-li">HTML/CSS</li>
+                  <li className="split-li">MySQL</li>
                   <li className="split-li">PostgreSQL</li>
+                  <li className="split-li">Microsoft SQL Server</li>
+                  <li className="split-li">AWS</li>
                 </ul>
               </div>
             </div>
@@ -81,8 +93,10 @@ class App extends Component {
                       <p>March 2019 - Present</p>
                       <div>
                         <ul>
-                          <li>Integrated email notifications and user subscription preferences through GetResponse to handle dispatching emails for campaigns and newsletter subscriptions.</li>
-                          <li>Implemented redesigned user registration and login systems with support for progressive profiling before granting users access to gated content.</li>
+                          <li>Designed new content taxonomy based on a hierarchy of tags, sub-zones, and primary zones that could be controlled off-platform and directly influence placement of site content dynamically</li>
+                          <li>Implemented middleware to pre-rank the contents of zone list pages, resulting in 100% fewer site outages as a result of heavy traffic to these pages overloading the RDS instance</li>
+                          <li>Developed a content bounty system to entice and reward users to write content for specific topics on the site, complete with bounty management and moderation capabilities</li>
+                          <li>Implemented redesigned user login and registration systems to convert anonymous users to members with support for progressive profiling and gated assets</li>
                         </ul>
                       </div>
                     </div>
@@ -91,9 +105,9 @@ class App extends Component {
                       <p>January 2017 - March 2019</p>
                       <div>
                         <ul>
-                          <li>Created an online role-based platform for the Carolina Hurricanes Foundation which was previously bid accessible only in-person or over the phone.</li>
-                          <li>Worked on a suites ordering web application that would allow customers renting suites during events and games to place food and beverage orders online rather than faxing their orders.</li>
-                          <li>Developed a collection of forms used for various departments to collect payment for services and donations.</li>
+                          <li>Migrated in-person auctions to an online presence by developing a custom auction platform with features such as bid history, order history, automatic payment processing, and real-time email and SMS notifications</li>
+                          <li>Designed in-house ordering suite system with dynamic food and beverage menus, menu templating system, and admin info portal for user registration, customer orders, and business analytics</li>
+                          <li>Developed multiple form-based services with custom invoicing to replace physical forms for promotional requests such as Stormy appearances, Storm Squad, Slap Shot, First Goal upgrades, and Hurricanes Kids Club</li>
                         </ul>
                       </div>
                     </div>
@@ -102,8 +116,8 @@ class App extends Component {
                       <p>June 2016 - January 2017</p>
                       <div>
                         <ul>
-                          <li>Developed a web app that aggregated publicly available MODIS data, weather information, and crop metadata into rasters.</li>
-                          <li>Implemented a tool used to batch process Excel spreadsheets containing crop metadata that automatically subdivided a plot overlayed on satellite imagery representing fields.</li>
+                          <li>Developed an application to automatically render a grid overlay on satellite imagery with associated crop metadata on geospatial plots with provided CSV file</li>
+                          <li>Implemented a tool to aggregate publicly available MODIS data, weather information, and crop metadata into summarization metrics via ZIP file</li>
                         </ul>
                       </div>
                     </div>
