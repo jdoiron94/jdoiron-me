@@ -32,6 +32,6 @@
   }
 
   h2 {
-    @apply pt-4 mb-4 text-[#f4f6f6];
+    @apply py-4 mb-4 text-[#f4f6f6];
   }
 }
