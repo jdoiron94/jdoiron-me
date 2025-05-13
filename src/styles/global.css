@@ -1,11 +1,24 @@
 @import "tailwindcss";
 
 @layer components {
+  nav,
+  section {
+    @apply bg-[#f4f6f6];
+  }
+
   a {
     @apply text-[#5fc3c5];
   }
 
   a:hover {
+    @apply text-[#1c2f4e];
+  }
+
+  p {
+    @apply text-[#647182];
+  }
+
+  h1 {
     @apply text-[#1c2f4e];
   }
 }
