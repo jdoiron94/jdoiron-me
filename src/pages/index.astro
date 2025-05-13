@@ -1,9 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const languages = ["Java", "Node.js", "Python", "HTML", "JavaScript", "CSS"];
+
+const technologies = [
+  "Spring",
+  "Hibernate",
+  "Freemarker",
+  "Thymeleaf",
+  "Gradle",
+  "REST",
+  "MySQL",
+  "PostgreSQL",
+  "Microsoft SQL Server",
+  "AWS",
+];
 ---
 
 <Layout>
-  <section class="px-8 md:px-16 lg:px-48 py-16 md:py-32 lg:py-64">
+  <section class="px-8 md:px-16 lg:px-48 py-16 md:py-32 lg:py-56">
     <p class="text-[#212529]">Hi, my name is</p>
     <h1 class="text-5xl">Jacob Doiron</h1>
     <p class="my-4">
@@ -14,5 +29,28 @@ import Layout from "../layouts/Layout.astro";
       > as a <span class="text-[#5fc3c5]">Senior Software Engineer</span> and I enjoy
       building systems.
     </p>
+  </section>
+  <section
+    class="px-8 md:px-16 lg:px-48 pt-4 pb-16 md:pb-32 lg:pb-48 bg-[#1c2f4e]"
+  >
+    <h2 class="pb-4 text-5xl">About me</h2>
+    <p class="text-[#98acc7]">
+      I'm a Software Engineer who enjoys working on project architecture and
+      implementation, with an emphasis on scoping and timely delivery. I
+      graduated from St. Mary's College of Maryland in the spring of 2016 and
+      have been developing professionally since.
+    </p>
+    <p class="text-[#98acc7]">
+      Here are some languages and frameworks I'm familiar with:
+    </p>
+    <ul class="px-12 columns-2">
+      {languages.map((lang) => <li class="text-[#98acc7]">{lang}</li>)}
+    </ul>
+    <p class="text-[#98acc7]">
+      Here are some additional supporting technologies I've used:
+    </p>
+    <ul class="px-12 columns-2">
+      {technologies.map((tech) => <li class="text-[#98acc7]">{tech}</li>)}
+    </ul>
   </section>
 </Layout>
