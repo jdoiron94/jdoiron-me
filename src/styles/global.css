@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@layer components {
+  a {
+    @apply text-[#5fc3c5];
+  }
+
+  a:hover {
+    @apply text-[#1c2f4e];
+  }
+}
