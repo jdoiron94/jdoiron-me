@@ -1,7 +1,7 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro"
 
-const languages = ["Java", "Node.js", "Python", "HTML", "JavaScript", "CSS"];
+const languages = ["Java", "Node.js", "Python", "HTML", "JavaScript", "CSS"]
 
 const technologies = [
   "Spring",
@@ -14,7 +14,7 @@ const technologies = [
   "PostgreSQL",
   "Microsoft SQL Server",
   "AWS",
-];
+]
 
 const experience = [
   {
@@ -59,7 +59,7 @@ const experience = [
       "Implemented a tool to aggregate publicly available MODIS data, weather information, and crop metadata into summarization metrics via ZIP file",
     ],
   },
-];
+]
 ---
 
 <Layout>
@@ -181,22 +181,22 @@ const experience = [
 </Layout>
 
 <script>
-  const tabs = document.querySelectorAll('div[role="tab"]');
-  const panels = document.querySelectorAll('div[role="tabpanel"]');
+  const tabs = document.querySelectorAll('div[role="tab"]')
+  const panels = document.querySelectorAll('div[role="tabpanel"]')
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
-      const target = tab.getAttribute("aria-controls");
+      const target = tab.getAttribute("aria-controls")
 
       panels.forEach((panel) => {
-        panel.classList.toggle("hidden", panel.id !== target);
-      });
+        panel.classList.toggle("hidden", panel.id !== target)
+      })
 
       tabs.forEach((t) => {
-        t.setAttribute("aria-selected", (t === tab).toString());
-      });
-    });
-  });
+        t.setAttribute("aria-selected", (t === tab).toString())
+      })
+    })
+  })
 </script>
 
 <style>
