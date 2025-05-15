@@ -7,7 +7,7 @@
   }
 
   a {
-    @apply text-[#5fc3c5];
+    @apply text-[#5fc3c5] transition;
   }
 
   a:hover {
