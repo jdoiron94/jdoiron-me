@@ -115,7 +115,7 @@ const experience = [
               <div
                 id={`tab-${e.id}`}
                 class:list={[
-                  "px-3 py-5 border border-gray-400 cursor-pointer hover:bg-[#f8f9fa]",
+                  "px-2 py-3 border border-gray-300 cursor-pointer hover:bg-[#f8f9fa]",
                   { "rounded-t-sm": i === 0 },
                   { "rounded-b-sm": i === experience.length - 1 },
                 ]}
@@ -128,12 +128,12 @@ const experience = [
             ))
           }
         </div>
-        <div>
+        <div class="w-full md:w-3/4">
           {
             experience.map((e, i) => (
               <div
                 id={`panel-${e.id}`}
-                class={`w-full md:w-3/4 ${i === 0 ? "" : "hidden"}`}
+                class={`${i === 0 ? "" : "hidden"}`}
                 role="tabpanel"
                 aria-labelledby={`tab-${e.id}`}
               >
