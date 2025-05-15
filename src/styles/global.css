@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer components {
+  nav,
+  section {
+    @apply bg-[#f4f6f6];
+  }
+
+  a {
+    @apply text-[#5fc3c5] transition;
+  }
+
+  a:hover {
+    @apply text-[#1c2f4e];
+  }
+
+  p {
+    @apply my-4;
+  }
+
+  p,
+  li {
+    @apply text-[#647182];
+  }
+
+  ul {
+    @apply list-disc list-inside;
+  }
+
+  h1 {
+    @apply mb-4 text-[#1c2f4e];
+  }
+
+  h2 {
+    @apply py-4 mb-4 text-[#f4f6f6];
+  }
+}

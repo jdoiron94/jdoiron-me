@@ -1,0 +1,208 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+const languages = ["Java", "Node.js", "Python", "HTML", "JavaScript", "CSS"]
+
+const technologies = [
+  "Spring",
+  "Hibernate",
+  "Freemarker",
+  "Thymeleaf",
+  "Gradle",
+  "REST",
+  "MySQL",
+  "PostgreSQL",
+  "Microsoft SQL Server",
+  "AWS",
+]
+
+const experience = [
+  {
+    company: {
+      name: "DZone",
+      url: "https://dzone.com/",
+    },
+    id: "dzone",
+    title: "Senior Software Engineer",
+    timeframe: "March 2019 - Present",
+    actions: [
+      "Designed new content taxonomy based on a hierarchy of tags, sub-zones, and primary zones that could be controlled off-platform and directly influence placement of site content dynamically",
+      "Implemented middleware to pre-rank the contents of zone list pages, resulting in 100% fewer site outages as a result of heavy traffic to these pages overloading the RDS instance",
+      "Developed a content bounty system to entice and reward users to write content for specific topics on the site, complete with bounty management and moderation capabilities",
+      "Implemented redesigned user login and registration systems to convert anonymous users to members with support for progressive profiling and gated assets",
+    ],
+  },
+  {
+    company: {
+      name: "Carolina Hurricanes",
+      url: "https://www.nhl.com/hurricanes/",
+    },
+    id: "carolina-hurricanes",
+    title: "Lead Full Stack Developer",
+    timeframe: "January 2017 - March 2019",
+    actions: [
+      "Migrated in-person auctions to an online presence by developing a custom auction platform with features such as bid history, order history, automatic payment processing, and real-time email and SMS notifications",
+      "Designed in-house ordering suite system with dynamic food and beverage menus, menu templating system, and admin info portal for user registration, customer orders, and business analytics",
+      "Developed multiple form-based services with custom invoicing to replace physical forms for promotional requests such as Stormy appearances, Storm Squad, Slap Shot, First Goal upgrades, and Hurricanes Kids Club",
+    ],
+  },
+  {
+    company: {
+      name: "Syngenta",
+      url: "https://www.syngenta.com/",
+    },
+    id: "syngenta",
+    title: "Web/GIS Developer",
+    timeframe: "June 2016 - January 2017",
+    actions: [
+      "Developed an application to automatically render a grid overlay on satellite imagery with associated crop metadata on geospatial plots with provided CSV file",
+      "Implemented a tool to aggregate publicly available MODIS data, weather information, and crop metadata into summarization metrics via ZIP file",
+    ],
+  },
+]
+---
+
+<Layout>
+  <section class="flex justify-center items-center py-16 md:py-32 lg:py-56">
+    <div class="w-full px-8 md:px-16 lg:p-0 lg:w-200">
+      <p class="text-[#212529]">Hi, my name is</p>
+      <h1 class="text-5xl">Jacob Doiron</h1>
+      <p class="my-4">
+        I am currently employed by <span class="text-[#5fc3c5]">DZone</span> as a
+        <span class="text-[#5fc3c5]">Senior Software Engineer</span> and I enjoy
+        building systems.
+      </p>
+    </div>
+  </section>
+  <section
+    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48 bg-[#1c2f4e]"
+  >
+    <div class="w-full px-8 md:px-16 lg:p-0 lg:w-200">
+      <h2 class="text-5xl">About me</h2>
+      <p class="text-[#98acc7]">
+        I'm a Software Engineer who enjoys working on project architecture and
+        implementation, with an emphasis on scoping and timely delivery. I
+        graduated from St. Mary's College of Maryland in the spring of 2016 and
+        have been developing professionally since.
+      </p>
+      <p class="text-[#98acc7]">
+        Here are some languages and frameworks I'm familiar with:
+      </p>
+      <ul class="px-12 columns-2">
+        {languages.map((lang) => <li class="text-[#98acc7]">{lang}</li>)}
+      </ul>
+      <p class="text-[#98acc7]">
+        Here are some additional supporting technologies I've used:
+      </p>
+      <ul class="px-12 columns-2">
+        {technologies.map((tech) => <li class="text-[#98acc7]">{tech}</li>)}
+      </ul>
+    </div>
+  </section>
+  <section
+    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48"
+  >
+    <div class="w-full px-8 md:px-16 lg:p-0 lg:w-200">
+      <h2 class="text-[#1c2f4e] text-5xl">Experience</h2>
+      <div class="flex flex-col md:flex-row md:gap-8">
+        <div
+          class="mb-6 w-full md:w-1/4"
+          role="tablist"
+          aria-label="Work experience tabs"
+        >
+          {
+            experience.map((e, i) => (
+              <div
+                id={`tab-${e.id}`}
+                class:list={[
+                  "px-2 py-3 border border-gray-300 cursor-pointer transition duration-300 hover:bg-[#f8f9fa]",
+                  { "rounded-t-sm": i === 0 },
+                  { "rounded-b-sm": i === experience.length - 1 },
+                ]}
+                role="tab"
+                aria-selected={i === 0}
+                aria-controls={`panel-${e.id}`}
+              >
+                <h3>{e.company.name}</h3>
+              </div>
+            ))
+          }
+        </div>
+        <div class="w-full md:w-3/4">
+          {
+            experience.map((e, i) => (
+              <div
+                id={`panel-${e.id}`}
+                class={`${i === 0 ? "" : "hidden"}`}
+                role="tabpanel"
+                aria-labelledby={`tab-${e.id}`}
+              >
+                <p class="mt-0">
+                  {e.title}{" "}
+                  <span class="text-[#5fc3c5]">
+                    @{" "}
+                    <a
+                      href={e.company.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {e.company.name}
+                    </a>
+                  </span>
+                </p>
+                <p>{e.timeframe}</p>
+                <ul>
+                  {e.actions.map((i) => (
+                    <li>{i}</li>
+                  ))}
+                </ul>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48 bg-[#1c2f4e]"
+  >
+    <div class="w-full px-8 md:px-16 lg:p-0 lg:w-200">
+      <h2 class="text-center text-5xl">Contact me</h2>
+      <p class="text-center text-[#98acc7]">
+        Think I could be a potential fit for your company? Contact me via <a
+          class="hover:text-[#f4f6f6]"
+          href="https://www.linkedin.com/in/jdoiron94/"
+          target="_blank"
+          rel="noopener noreferrer">LinkedIn</a
+        >.
+      </p>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  const tabs = document.querySelectorAll('div[role="tab"]')
+  const panels = document.querySelectorAll('div[role="tabpanel"]')
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = tab.getAttribute("aria-controls")
+
+      panels.forEach((panel) => {
+        panel.classList.toggle("hidden", panel.id !== target)
+      })
+
+      tabs.forEach((t) => {
+        t.setAttribute("aria-selected", (t === tab).toString())
+      })
+    })
+  })
+</script>
+
+<style>
+  div[aria-selected="true"] {
+    background-color: #5fc3c5;
+    border-color: #5fc3c5;
+    color: #f4f6f6;
+  }
+</style>
