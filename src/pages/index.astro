@@ -64,11 +64,11 @@ const experience = [
 
 <Layout>
   <section
-    class="flex justify-center items-center h-[calc(100vh_-_56px)] bg-light-gray dark:bg-black text-light-black dark:text-gray"
+    class="flex justify-center items-center h-[calc(100vh_-_56px)] bg-blue dark:bg-black text-light-blue dark:text-gray"
   >
     <div class="w-full px-8 md:px-16 lg:p-0 lg:w-200">
       <p>Hi, my name is</p>
-      <h1 class="text-blue dark:text-white">Jacob Doiron</h1>
+      <h1 class="text-white">Jacob Doiron</h1>
       <p class="my-4">
         I am currently employed by <span class="text-turqoise dark:text-purple"
           >DZone</span
@@ -80,10 +80,10 @@ const experience = [
     </div>
   </section>
   <section
-    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48 bg-blue dark:bg-black text-light-blue dark:text-gray"
+    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48 bg-light-gray dark:bg-black text-light-black dark:text-gray"
   >
     <div class="w-full px-8 md:px-16 lg:p-0 lg:w-200">
-      <h2 class="text-white">About me</h2>
+      <h2 class="text-blue dark:text-white">About me</h2>
       <p>
         I'm a Software Engineer who enjoys working on project architecture and
         implementation, with an emphasis on scoping and timely delivery. I
@@ -101,10 +101,10 @@ const experience = [
     </div>
   </section>
   <section
-    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48 bg-light-gray dark:bg-black text-light-black dark:text-gray"
+    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48 bg-blue dark:bg-black text-light-blue dark:text-gray"
   >
     <div class="w-full px-8 md:px-16 lg:p-0 lg:w-200">
-      <h2 class="text-blue dark:text-white">Experience</h2>
+      <h2 class="text-white">Experience</h2>
       <div class="flex flex-col md:flex-row md:gap-8">
         <div
           class="mb-6 w-full md:w-1/4"
@@ -116,7 +116,7 @@ const experience = [
               <div
                 id={`tab-${e.id}`}
                 class:list={[
-                  "px-2 py-3 border border-gray-300 dark:border-gray-500 cursor-pointer transition duration-300 hover:bg-[#f8f9fa] dark:hover:bg-purple text-light-black dark:text-white",
+                  "px-2 py-3 border border-gray-300 dark:border-gray-500 cursor-pointer transition duration-300 bg-white dark:bg-black hover:bg-light-gray dark:hover:bg-purple text-light-black dark:text-white",
                   { "rounded-t-sm": i === 0 },
                   { "rounded-b-sm": i === experience.length - 1 },
                 ]}
@@ -143,7 +143,7 @@ const experience = [
                   <span class="text-turqoise dark:text-purple">
                     @{" "}
                     <a
-                      class="hover:text-blue dark:hover:text-white"
+                      class="hover:text-white"
                       href={e.company.url}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -166,13 +166,13 @@ const experience = [
     </div>
   </section>
   <section
-    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48 bg-blue dark:bg-black"
+    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48 bg-light-gray dark:bg-black"
   >
     <div class="w-full px-8 md:px-16 lg:p-0 lg:w-200">
-      <h2 class="text-center text-white">Contact me</h2>
-      <p class="text-center text-light-blue dark:text-gray">
+      <h2 class="text-center text-blue dark:text-white">Contact me</h2>
+      <p class="text-center text-light-black dark:text-gray">
         Think I could be a potential fit for your company? Contact me via <a
-          class="text-turqoise dark:text-purple hover:text-white dark:hover:text-white"
+          class="text-turqoise dark:text-purple hover:text-blue dark:hover:text-white"
           href="https://www.linkedin.com/in/jdoiron94/"
           target="_blank"
           rel="noopener noreferrer">LinkedIn</a
