@@ -116,7 +116,7 @@ const experience = [
               <div
                 id={`tab-${e.id}`}
                 class:list={[
-                  "px-2 py-3 border border-gray-300 dark:border-gray-500 cursor-pointer transition duration-300 bg-white dark:bg-black hover:bg-light-gray dark:hover:bg-purple text-light-black dark:text-white",
+                  "px-2 py-3 border border-gray-300 dark:border-gray-500 cursor-pointer transition duration-300 bg-white dark:bg-black hover:bg-light-gray dark:hover:bg-purple aria-selected:bg-turqoise dark:aria-selected:bg-purple text-light-black aria-selected:text-white dark:text-white",
                   { "rounded-t-sm": i === 0 },
                   { "rounded-b-sm": i === experience.length - 1 },
                 ]}
@@ -200,19 +200,3 @@ const experience = [
     })
   })
 </script>
-
-<style>
-  div[aria-selected="true"] {
-    background-color: var(--color-turqoise);
-    border-color: var(--color-turqoise);
-    color: var(--color-white);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    div[aria-selected="true"] {
-      background-color: var(--color-purple);
-      border-color: var(--color-gray-500);
-      color: var(--color-white);
-    }
-  }
-</style>
