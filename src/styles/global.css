@@ -24,72 +24,73 @@
 
   nav {
     @apply bg-primary;
+
+    a {
+      @apply text-tertiary;
+
+      &:hover {
+        @apply text-secondary;
+      }
+    }
   }
 
   section {
     @apply bg-secondary;
-  }
 
-  nav a {
-    @apply text-tertiary;
-  }
-
-  nav a:hover {
-    @apply text-secondary;
-  }
-
-  section:nth-child(even) {
-    @apply bg-primary;
-  }
-
-  section h1 {
-    @apply text-secondary;
-  }
-
-  section h2 {
-    @apply text-primary;
-  }
-
-  section p,
-  section li,
-  footer p {
-    @apply text-light-blue;
-  }
-
-  section a,
-  footer a {
-    @apply text-tertiary;
-  }
-
-  section a:hover,
-  footer a:hover {
-    @apply text-white;
-  }
-
-  section:nth-child(even) p,
-  section:nth-child(even) li {
-    @apply text-gray;
-  }
-
-  section:nth-child(even) span {
-    @apply text-tertiary;
-  }
-
-  section:nth-child(even) h2 {
-    @apply text-secondary;
-  }
-
-  section:nth-child(even) a:hover {
-    @apply text-secondary;
-  }
-
-  /* @media (prefers-color-scheme: dark) {
-    
-
-    section
-    h1,
-    h2 {
-      color: #EEEEEE;
+    h1 {
+      @apply text-secondary;
     }
-  } */
+
+    h2 {
+      @apply text-primary;
+    }
+
+    p,
+    li {
+      @apply text-light-blue;
+    }
+
+    a {
+      @apply text-tertiary;
+
+      &:hover {
+        @apply text-white;
+      }
+    }
+
+    &:nth-child(even) {
+      @apply bg-primary;
+
+      h2 {
+        @apply text-secondary;
+      }
+
+      p,
+      li {
+        @apply text-gray;
+      }
+
+      span {
+        @apply text-tertiary;
+      }
+
+      a:hover {
+        @apply text-secondary;
+      }
+    }
+  }
+
+  footer {
+    p {
+      @apply text-light-blue;
+    }
+
+    a {
+      @apply text-tertiary;
+
+      &:hover {
+        @apply text-white;
+      }
+    }
+  }
 }
