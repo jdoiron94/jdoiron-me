@@ -1,17 +1,18 @@
 @import "tailwindcss";
+@import "./colors.css";
 
 @layer components {
   nav,
   section {
-    @apply bg-[#f4f6f6];
+    @apply bg-primary;
   }
 
   a {
-    @apply text-[#5fc3c5] transition;
+    @apply text-tertiary transition;
   }
 
   a:hover {
-    @apply text-[#1c2f4e];
+    @apply text-secondary;
   }
 
   p {
@@ -20,7 +21,7 @@
 
   p,
   li {
-    @apply text-[#647182];
+    @apply text-gray;
   }
 
   ul {
@@ -28,10 +29,10 @@
   }
 
   h1 {
-    @apply mb-4 text-[#1c2f4e];
+    @apply mb-4 text-secondary;
   }
 
   h2 {
-    @apply py-4 mb-4 text-[#f4f6f6];
+    @apply py-4 mb-4 text-primary;
   }
 }
