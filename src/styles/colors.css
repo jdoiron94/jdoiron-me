@@ -7,3 +7,11 @@
   --color-light-blue: #98acc7;
   --color-gray: #647182;
 }
+
+/* @media (prefers-color-scheme: dark) {
+    @theme {
+        --color-primary: #222831;
+        --color-secondary: #31363F;
+        --color-tertiary: #76ABAE;
+    }
+} */
