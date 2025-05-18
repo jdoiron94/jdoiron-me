@@ -1,7 +1,7 @@
 {
   "name": "jdoiron-me",
   "type": "module",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -11,9 +11,10 @@
     "prettier:fix": "prettier . --write"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.6",
-    "astro": "^5.7.12",
-    "tailwindcss": "^4.1.6"
+    "@tailwindcss/vite": "^4.1.7",
+    "astro": "^5.7.13",
+    "tailwindcss": "^4.1.7",
+    "tailwindcss-animated": "^2.0.0"
   },
   "devDependencies": {
     "prettier": "3.5.3",

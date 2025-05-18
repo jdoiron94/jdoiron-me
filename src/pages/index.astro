@@ -63,47 +63,54 @@ const experience = [
 ---
 
 <Layout>
-  <section class="flex justify-center items-center py-16 md:py-32 lg:py-56">
+  <section
+    class="flex justify-center items-center h-[calc(100vh_-_56px)] bg-blue dark:bg-black text-light-blue dark:text-gray"
+  >
     <div class="w-full px-8 md:px-16 lg:p-0 lg:w-200">
-      <p class="text-[#212529]">Hi, my name is</p>
-      <h1 class="text-5xl">Jacob Doiron</h1>
-      <p class="my-4">
-        I am currently employed by <span class="text-[#5fc3c5]">DZone</span> as a
-        <span class="text-[#5fc3c5]">Senior Software Engineer</span> and I enjoy
-        building systems.
+      <h1
+        class="text-white text-2xl animate-fade animate-duration-2000 animate-ease-in"
+      >
+        Hi, my name is <span class="font-bold">Jacob Doiron</span>.
+      </h1>
+      <p
+        class="text-2xl tracking-wide animate-fade animate-duration-2000 animate-ease-in animate-delay-500"
+      >
+        I am currently employed by <a
+          class="text-turqoise dark:text-purple hover:text-white"
+          href="#tab-dzone">DZone</a
+        > as a
+        <span class="text-turqoise dark:text-purple"
+          >Senior Software Engineer</span
+        > and I enjoy building systems.
       </p>
     </div>
   </section>
   <section
-    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48 bg-[#1c2f4e]"
+    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48 bg-light-gray dark:bg-black text-light-black dark:text-gray"
   >
     <div class="w-full px-8 md:px-16 lg:p-0 lg:w-200">
-      <h2 class="text-5xl">About me</h2>
-      <p class="text-[#98acc7]">
+      <h2 class="text-blue dark:text-white">About me</h2>
+      <p>
         I'm a Software Engineer who enjoys working on project architecture and
         implementation, with an emphasis on scoping and timely delivery. I
         graduated from St. Mary's College of Maryland in the spring of 2016 and
         have been developing professionally since.
       </p>
-      <p class="text-[#98acc7]">
-        Here are some languages and frameworks I'm familiar with:
-      </p>
+      <p>Here are some languages and frameworks I'm familiar with:</p>
       <ul class="px-12 columns-2">
-        {languages.map((lang) => <li class="text-[#98acc7]">{lang}</li>)}
+        {languages.map((lang) => <li>{lang}</li>)}
       </ul>
-      <p class="text-[#98acc7]">
-        Here are some additional supporting technologies I've used:
-      </p>
+      <p>Here are some additional supporting technologies I've used:</p>
       <ul class="px-12 columns-2">
-        {technologies.map((tech) => <li class="text-[#98acc7]">{tech}</li>)}
+        {technologies.map((tech) => <li>{tech}</li>)}
       </ul>
     </div>
   </section>
   <section
-    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48"
+    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48 bg-blue dark:bg-black text-light-blue dark:text-gray"
   >
     <div class="w-full px-8 md:px-16 lg:p-0 lg:w-200">
-      <h2 class="text-[#1c2f4e] text-5xl">Experience</h2>
+      <h2 class="text-white">Experience</h2>
       <div class="flex flex-col md:flex-row md:gap-8">
         <div
           class="mb-6 w-full md:w-1/4"
@@ -115,7 +122,7 @@ const experience = [
               <div
                 id={`tab-${e.id}`}
                 class:list={[
-                  "px-2 py-3 border border-gray-300 cursor-pointer transition duration-300 hover:bg-[#f8f9fa]",
+                  "px-2 py-3 border border-gray-300 dark:border-gray-500 cursor-pointer transition duration-300 bg-white dark:bg-black hover:bg-light-gray dark:hover:bg-purple aria-selected:bg-turqoise dark:aria-selected:bg-purple text-light-black aria-selected:text-white dark:text-white",
                   { "rounded-t-sm": i === 0 },
                   { "rounded-b-sm": i === experience.length - 1 },
                 ]}
@@ -139,9 +146,10 @@ const experience = [
               >
                 <p class="mt-0">
                   {e.title}{" "}
-                  <span class="text-[#5fc3c5]">
+                  <span class="text-turqoise dark:text-purple">
                     @{" "}
                     <a
+                      class="hover:text-white"
                       href={e.company.url}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -164,13 +172,13 @@ const experience = [
     </div>
   </section>
   <section
-    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48 bg-[#1c2f4e]"
+    class="flex justify-center items-center pt-4 pb-16 md:pb-32 lg:pb-48 bg-light-gray dark:bg-black"
   >
     <div class="w-full px-8 md:px-16 lg:p-0 lg:w-200">
-      <h2 class="text-center text-5xl">Contact me</h2>
-      <p class="text-center text-[#98acc7]">
+      <h2 class="text-center text-blue dark:text-white">Contact me</h2>
+      <p class="text-center text-light-black dark:text-gray">
         Think I could be a potential fit for your company? Contact me via <a
-          class="hover:text-[#f4f6f6]"
+          class="text-turqoise dark:text-purple hover:text-blue dark:hover:text-white"
           href="https://www.linkedin.com/in/jdoiron94/"
           target="_blank"
           rel="noopener noreferrer">LinkedIn</a
@@ -198,11 +206,3 @@ const experience = [
     })
   })
 </script>
-
-<style>
-  div[aria-selected="true"] {
-    background-color: #5fc3c5;
-    border-color: #5fc3c5;
-    color: #f4f6f6;
-  }
-</style>

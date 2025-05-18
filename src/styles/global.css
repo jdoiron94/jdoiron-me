@@ -1,37 +1,29 @@
 @import "tailwindcss";
+@import "tailwindcss-animated";
+@import "./colors.css";
+
+* {
+  scroll-behavior: smooth;
+}
 
 @layer components {
-  nav,
-  section {
-    @apply bg-[#f4f6f6];
+  h1 {
+    @apply mb-4 text-5xl;
+  }
+
+  h2 {
+    @apply py-4 mb-4 text-5xl;
   }
 
   a {
-    @apply text-[#5fc3c5] transition;
-  }
-
-  a:hover {
-    @apply text-[#1c2f4e];
+    @apply transition;
   }
 
   p {
     @apply my-4;
   }
 
-  p,
-  li {
-    @apply text-[#647182];
-  }
-
   ul {
     @apply list-disc list-inside;
-  }
-
-  h1 {
-    @apply mb-4 text-[#1c2f4e];
-  }
-
-  h2 {
-    @apply py-4 mb-4 text-[#f4f6f6];
   }
 }
