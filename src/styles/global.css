@@ -2,6 +2,10 @@
 @import "tailwindcss-animated";
 @import "./colors.css";
 
+* {
+  scroll-behavior: smooth;
+}
+
 @layer components {
   h1 {
     @apply mb-4 text-5xl;
